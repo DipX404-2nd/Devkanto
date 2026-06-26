@@ -104,7 +104,7 @@ export default function Scene1Opening({ onStart }: Scene1OpeningProps) {
           className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-pink-500/10 border border-pink-400/20 text-pink-300 text-xs uppercase tracking-widest font-mono mb-6"
         >
           <Sparkles size={14} className="animate-pulse" />
-          25th June — A Magical Day
+          26th June — A Magical Day
         </motion.div>
 
         {/* Beautiful luxury title */}
