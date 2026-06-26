@@ -13,7 +13,7 @@ export interface DevkantoImage {
 
 export const DEVKANTO_IMAGES: DevkantoImage[] = [
   {
-    id: 'blue_saree',
+    id: 'Stylis Black',
     src: './images/photo6.jpg',
     title: 'Grace & Elegance',
     description: 'Devkanto looking breathtakingly elegant in his turquoise blue saree, framed by nature\'s beauty.',
