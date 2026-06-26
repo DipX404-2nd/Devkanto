@@ -13,38 +13,38 @@ export interface DevkantoImage {
 
 export const DEVKANTO_IMAGES: DevkantoImage[] = [
   {
-    id: 'blue_saree',
-    src: './images/photo6.jpg',
-    title: 'Grace & Elegance',
-    description: 'Devkanto looking breathtakingly elegant in his turquoise blue saree, framed by nature\'s beauty.',
-    vibe: 'Traditional Grace'
+    id: 'cafe_smile',
+    src: './images/photo6.jpg?v=3',
+    title: 'Warm Cafe Vibes',
+    description: 'A charming moment of relaxation, sharing a radiant smile and warm conversations.',
+    vibe: 'Cool & Relaxed'
   },
   {
-    id: 'yellow_saree',
-    src: './images/photo7.jpg',
-    title: 'Radiant Glow',
-    description: 'A glowing smile in vibrant yellow, lighting up the room with warmth and pure happiness.',
-    vibe: 'Festive Radiance'
+    id: 'park_adventure',
+    src: './images/photo7.jpg?v=3',
+    title: 'Outdoor Adventure',
+    description: 'Ready to explore the world with cool confidence, stylish shades, and an adventurous spirit.',
+    vibe: 'Vibrant Explorer'
   },
   {
-    id: 'two_friends',
-    src: './images/photo8.jpg',
-    title: 'Laughter & Friendship',
-    description: 'Sharing beautiful moments of celebration and endless smiles with loved ones.',
-    vibe: 'Happy Companionship'
+    id: 'festive_confidence',
+    src: './images/photo8.jpg?v=3',
+    title: 'Tradition & Style',
+    description: 'Blending classic check patterns with festive poise and an elegant, confident stance.',
+    vibe: 'Stylish Sophistication'
   },
   {
-    id: 'pink_hoodie',
-    src: './images/photo9.jpg',
-    title: 'Charming & Playful',
-    description: 'A cozy adventure blending stylish comfort with sweet, natural charm.',
-    vibe: 'Playful Spirit'
+    id: 'river_breeze',
+    src: './images/photo9.jpg?v=3',
+    title: 'By the Waterside',
+    description: 'A serene walk along the river, enjoying the gentle breeze and natural outdoor beauty.',
+    vibe: 'Serene Charm'
   },
   {
-    id: 'traditional_mother',
-    src: './images/photo10.jpg',
-    title: 'Sacred Blessings',
-    description: 'A beautiful moment in traditional white, sharing a heart full of love with his mother.',
-    vibe: 'Endless Love'
+    id: 'steps_reflection',
+    src: './images/photo10.jpg?v=3',
+    title: 'Moments of Reflection',
+    description: 'Sitting comfortably, reflecting on beautiful memories with a peaceful and happy mind.',
+    vibe: 'Thoughtful Grace'
   }
 ];
