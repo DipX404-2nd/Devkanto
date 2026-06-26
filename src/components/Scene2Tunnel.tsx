@@ -173,7 +173,6 @@ export default function Scene2Tunnel({ onNext, onBack }: Scene2TunnelProps) {
               <img
                 src={currentImage?.src}
                 alt={currentImage?.title}
-                referrerPolicy="no-referrer"
                 className="w-full h-full object-cover transition-transform duration-500 scale-100 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />

@@ -103,7 +103,6 @@ export default function Scene3Gallery({ onNext, onBack }: Scene3GalleryProps) {
                 <img
                   src={image.src}
                   alt={image.title}
-                  referrerPolicy="no-referrer"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-108"
                 />
                 
@@ -224,7 +223,6 @@ export default function Scene3Gallery({ onNext, onBack }: Scene3GalleryProps) {
                 <img
                   src={selectedImage.src}
                   alt={selectedImage.title}
-                  referrerPolicy="no-referrer"
                   className="w-full h-full object-cover"
                 />
                 

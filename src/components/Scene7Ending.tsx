@@ -95,7 +95,6 @@ export default function Scene7Ending({ onRestart, onBack }: Scene7EndingProps) {
               <img
                 src={DEVKANTO_IMAGES[photoIndex]?.src}
                 alt="Devkanto Collage"
-                referrerPolicy="no-referrer"
                 className="w-full h-full object-cover rounded-xl"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
