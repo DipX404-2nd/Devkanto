@@ -73,7 +73,7 @@ export default function Scene4Message({ onNext, onBack }: Scene4MessageProps) {
               </motion.div>
 
               <h3 className="text-xl font-medium tracking-tight bg-gradient-to-r from-pink-200 to-rose-200 bg-clip-text text-transparent">
-                To Disha ❤️
+                To Devkanto ❤️
               </h3>
               <p className="text-gray-400 text-xs mt-3 leading-relaxed max-w-xs font-light">
                 Click on the golden seal to unlock the heartfelt birthday message written just for you.
@@ -120,7 +120,7 @@ export default function Scene4Message({ onNext, onBack }: Scene4MessageProps) {
               {/* Letter Body Text */}
               <div id="letter-body" className="flex-1 flex flex-col justify-center text-center space-y-6 my-4 px-2">
                 <p className="font-serif italic text-rose-300 text-lg md:text-xl font-medium tracking-wide">
-                  Dearest Disha,
+                  Dearest Devkanto,
                 </p>
                 
                 {/* Main emotional wish text */}
@@ -134,7 +134,7 @@ export default function Scene4Message({ onNext, onBack }: Scene4MessageProps) {
 
                 {/* Big birthday greeting */}
                 <h3 className="text-xl md:text-2xl font-bold tracking-wide bg-gradient-to-r from-pink-300 via-rose-300 to-indigo-200 bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(244,143,177,0.3)] mt-2">
-                  Happy Birthday, Disha ❤️
+                  Happy Birthday, Devkanto ❤️
                 </h3>
               </div>
 

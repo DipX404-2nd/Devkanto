@@ -5,7 +5,7 @@
 
 import { useState, MouseEvent } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { DISHA_IMAGES } from '../images';
+import { DEVKANTO_IMAGES } from '../images';
 import ParticleBackground from './ParticleBackground';
 import { Sparkles, Star, ChevronRight, ChevronLeft, Heart } from 'lucide-react';
 
@@ -27,7 +27,7 @@ export default function Scene6DreamSky({ onNext, onBack }: Scene6DreamSkyProps) 
   const [releasedCount, setReleasedCount] = useState(0);
 
   // Use the yellow saree image as the blended backdrop constellation
-  const constellationPhoto = DISHA_IMAGES[1]?.src || '';
+  const constellationPhoto = DEVKANTO_IMAGES[1]?.src || '';
 
   const handleReleaseLantern = (e: MouseEvent<HTMLDivElement>) => {
     // Release a custom interactive lantern at clicked X coordinate
@@ -153,7 +153,7 @@ export default function Scene6DreamSky({ onNext, onBack }: Scene6DreamSkyProps) 
             <Star size={16} className="text-indigo-300 fill-current absolute right-0" />
           </div>
           <p className="text-[10px] font-mono uppercase tracking-widest text-pink-300/60 mt-4">
-            Constellation Disha
+            Constellation Devkanto
           </p>
         </motion.div>
       </main>

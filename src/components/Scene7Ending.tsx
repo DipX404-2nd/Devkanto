@@ -5,7 +5,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { DISHA_IMAGES } from '../images';
+import { DEVKANTO_IMAGES } from '../images';
 import ParticleBackground from './ParticleBackground';
 import { Sparkles, RotateCcw, ChevronLeft, Heart } from 'lucide-react';
 
@@ -20,7 +20,7 @@ export default function Scene7Ending({ onRestart, onBack }: Scene7EndingProps) {
   // Auto-rotate the collage/focus photo every 3.5 seconds
   useEffect(() => {
     const interval = setInterval(() => {
-      setPhotoIndex((prev) => (prev + 1) % DISHA_IMAGES.length);
+      setPhotoIndex((prev) => (prev + 1) % DEVKANTO_IMAGES.length);
     }, 3500);
     return () => clearInterval(interval);
   }, []);
@@ -93,8 +93,8 @@ export default function Scene7Ending({ onRestart, onBack }: Scene7EndingProps) {
               className="absolute w-full h-full rounded-2xl border-2 border-pink-300/30 p-2.5 bg-white/5 backdrop-blur-xl shadow-[0_0_40px_rgba(255,183,197,0.2)] overflow-hidden"
             >
               <img
-                src={DISHA_IMAGES[photoIndex]?.src}
-                alt="Disha Collage"
+                src={DEVKANTO_IMAGES[photoIndex]?.src}
+                alt="Devkanto Collage"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover rounded-xl"
               />
@@ -136,7 +136,7 @@ export default function Scene7Ending({ onRestart, onBack }: Scene7EndingProps) {
             transition={{ delay: 0.5, duration: 1.2 }}
             className="text-4xl md:text-5xl font-bold font-sans tracking-tight bg-gradient-to-r from-rose-200 via-pink-300 to-indigo-100 bg-clip-text text-transparent mb-5 leading-tight text-center drop-shadow-[0_0_20px_rgba(244,143,177,0.4)]"
           >
-            Happy Birthday, Disha ❤️
+            Happy Birthday, Devkanto ❤️
           </motion.h1>
 
           <motion.p

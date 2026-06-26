@@ -97,7 +97,7 @@ export default function Scene5Cake({ onNext, onBack }: Scene5CakeProps) {
           transition={{ delay: 0.2, duration: 0.8 }}
           className="text-3xl md:text-5xl font-bold tracking-tight bg-gradient-to-r from-rose-200 via-pink-200 to-indigo-100 bg-clip-text text-transparent"
         >
-          Make a Wish, Disha 🎂
+          Make a Wish, Devkanto 🎂
         </motion.h2>
         
         <motion.p
@@ -301,7 +301,7 @@ export default function Scene5Cake({ onNext, onBack }: Scene5CakeProps) {
               {/* Glowing birthday greeting printed on cake */}
               <div className="text-center font-mono text-[9px] uppercase tracking-widest text-pink-300 pb-4 flex items-center justify-center gap-1.5 font-bold">
                 <Heart size={10} className="text-rose-500 fill-current" />
-                Disha's Birthday Cake
+                Devkanto's Birthday Cake
                 <Heart size={10} className="text-rose-500 fill-current" />
               </div>
             </motion.div>

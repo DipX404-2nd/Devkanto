@@ -5,7 +5,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { DISHA_IMAGES } from '../images';
+import { DEVKANTO_IMAGES } from '../images';
 import ParticleBackground from './ParticleBackground';
 import { ChevronRight, ChevronLeft, Sparkles, Heart } from 'lucide-react';
 
@@ -37,7 +37,7 @@ export default function Scene2Tunnel({ onNext, onBack }: Scene2TunnelProps) {
 
   const handleNextImage = () => {
     setDirection(1);
-    if (currentIndex < DISHA_IMAGES.length - 1) {
+    if (currentIndex < DEVKANTO_IMAGES.length - 1) {
       setCurrentIndex((prev) => prev + 1);
     } else {
       // Finished all memories, proceed to next scene (Gallery)
@@ -54,7 +54,7 @@ export default function Scene2Tunnel({ onNext, onBack }: Scene2TunnelProps) {
     }
   };
 
-  const currentImage = DISHA_IMAGES[currentIndex];
+  const currentImage = DEVKANTO_IMAGES[currentIndex];
 
   // Framer Motion variants for sliding tunnel transition
   const slideVariants = {
@@ -127,7 +127,7 @@ export default function Scene2Tunnel({ onNext, onBack }: Scene2TunnelProps) {
 
         {/* Top Memory Segment Indicators */}
         <div id="tunnel-indicators" className="flex justify-center gap-2 w-full max-w-xs md:max-w-md">
-          {DISHA_IMAGES.map((_, index) => (
+          {DEVKANTO_IMAGES.map((_, index) => (
             <div
               key={`indicator-${index}`}
               id={`indicator-${index}`}
@@ -205,7 +205,7 @@ export default function Scene2Tunnel({ onNext, onBack }: Scene2TunnelProps) {
         </motion.button>
 
         <span className="text-xs font-mono text-pink-300/60 tracking-widest">
-          MEMORY {currentIndex + 1} OF {DISHA_IMAGES.length}
+          MEMORY {currentIndex + 1} OF {DEVKANTO_IMAGES.length}
         </span>
 
         <motion.button
@@ -215,7 +215,7 @@ export default function Scene2Tunnel({ onNext, onBack }: Scene2TunnelProps) {
           onClick={handleNextImage}
           className="flex items-center gap-2 text-xs md:text-sm font-mono text-pink-300 hover:text-white transition bg-pink-500/10 border border-pink-400/20 px-5 py-2.5 rounded-full backdrop-blur-md shadow-[0_0_15px_rgba(236,72,153,0.15)] cursor-pointer"
         >
-          {currentIndex === DISHA_IMAGES.length - 1 ? 'Gallery' : 'Next'}
+          {currentIndex === DEVKANTO_IMAGES.length - 1 ? 'Gallery' : 'Next'}
           <ChevronRight size={16} />
         </motion.button>
       </footer>

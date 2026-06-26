@@ -4,7 +4,7 @@
  */
 
 import { motion } from 'motion/react';
-import { DISHA_IMAGES } from '../images';
+import { DEVKANTO_IMAGES } from '../images';
 import ParticleBackground from './ParticleBackground';
 import { Sparkles, Heart } from 'lucide-react';
 
@@ -13,8 +13,8 @@ interface Scene1OpeningProps {
 }
 
 export default function Scene1Opening({ onStart }: Scene1OpeningProps) {
-  // Use Disha's blue saree photo as the main background
-  const mainPhoto = DISHA_IMAGES[0]?.src || '';
+  // Use Devkanto's blue saree photo as the main background
+  const mainPhoto = DEVKANTO_IMAGES[0]?.src || '';
 
   return (
     <div id="scene-opening" className="relative w-full min-h-screen overflow-hidden flex flex-col items-center justify-center text-white px-4">
@@ -70,7 +70,7 @@ export default function Scene1Opening({ onStart }: Scene1OpeningProps) {
         transition={{ duration: 1.2, ease: 'easeOut' }}
         className="relative z-10 max-w-2xl text-center px-6 py-12 md:px-12 md:py-16 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-[0_0_50px_rgba(255,183,197,0.15)] flex flex-col items-center"
       >
-        {/* Soft floating golden portrait thumbnail of Disha */}
+        {/* Soft floating golden portrait thumbnail of Devkanto */}
         <motion.div
           id="opening-avatar-container"
           initial={{ scale: 0.8, opacity: 0 }}
@@ -80,7 +80,7 @@ export default function Scene1Opening({ onStart }: Scene1OpeningProps) {
         >
           <img
             src={mainPhoto}
-            alt="Disha Portrait"
+            alt="Devkanto Portrait"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
           />
@@ -116,7 +116,7 @@ export default function Scene1Opening({ onStart }: Scene1OpeningProps) {
           className="text-4xl md:text-6xl font-bold font-sans tracking-tight bg-gradient-to-r from-rose-200 via-pink-300 to-indigo-200 bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(255,255,255,0.15)] mb-6 leading-tight"
         >
           Happy Birthday <br className="hidden md:inline" />
-          <span className="text-pink-300 drop-shadow-[0_0_20px_rgba(244,143,177,0.5)]">Disha</span> ✨
+          <span className="text-pink-300 drop-shadow-[0_0_20px_rgba(244,143,177,0.5)]">Devkanto</span> ✨
         </motion.h1>
 
         {/* Emotionally descriptive caption */}

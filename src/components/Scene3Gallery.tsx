@@ -5,7 +5,7 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { DISHA_IMAGES, DishaImage } from '../images';
+import { DEVKANTO_IMAGES, DevkantoImage } from '../images';
 import ParticleBackground from './ParticleBackground';
 import { Sparkles, Maximize2, X, ChevronRight, ChevronLeft, Heart } from 'lucide-react';
 
@@ -15,10 +15,10 @@ interface Scene3GalleryProps {
 }
 
 export default function Scene3Gallery({ onNext, onBack }: Scene3GalleryProps) {
-  const [selectedImage, setSelectedImage] = useState<DishaImage | null>(null);
+  const [selectedImage, setSelectedImage] = useState<DevkantoImage | null>(null);
   const [lightboxIndex, setLightboxIndex] = useState<number>(0);
 
-  const openLightbox = (image: DishaImage, index: number) => {
+  const openLightbox = (image: DevkantoImage, index: number) => {
     setSelectedImage(image);
     setLightboxIndex(index);
   };
@@ -30,11 +30,11 @@ export default function Scene3Gallery({ onNext, onBack }: Scene3GalleryProps) {
   const navigateLightbox = (direction: 'next' | 'prev') => {
     let nextIndex = lightboxIndex;
     if (direction === 'next') {
-      nextIndex = (lightboxIndex + 1) % DISHA_IMAGES.length;
+      nextIndex = (lightboxIndex + 1) % DEVKANTO_IMAGES.length;
     } else {
-      nextIndex = (lightboxIndex - 1 + DISHA_IMAGES.length) % DISHA_IMAGES.length;
+      nextIndex = (lightboxIndex - 1 + DEVKANTO_IMAGES.length) % DEVKANTO_IMAGES.length;
     }
-    setSelectedImage(DISHA_IMAGES[nextIndex]);
+    setSelectedImage(DEVKANTO_IMAGES[nextIndex]);
     setLightboxIndex(nextIndex);
   };
 
@@ -80,10 +80,10 @@ export default function Scene3Gallery({ onNext, onBack }: Scene3GalleryProps) {
         </motion.p>
       </header>
 
-      {/* Grid of Disha's Images */}
+      {/* Grid of Devkanto's Images */}
       <main id="gallery-grid-container" className="relative z-10 w-full max-w-5xl mx-auto my-10 flex-1 flex items-center justify-center">
         <div id="gallery-grid" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full px-2">
-          {DISHA_IMAGES.map((image, index) => (
+          {DEVKANTO_IMAGES.map((image, index) => (
             <motion.div
               key={image.id}
               id={`gallery-item-${image.id}`}
@@ -152,7 +152,7 @@ export default function Scene3Gallery({ onNext, onBack }: Scene3GalleryProps) {
         </motion.button>
 
         <span className="text-xs font-mono text-pink-400/50 tracking-widest uppercase">
-          Disha's Gallery ✨
+          Devkanto's Gallery ✨
         </span>
 
         <motion.button
@@ -270,7 +270,7 @@ export default function Scene3Gallery({ onNext, onBack }: Scene3GalleryProps) {
                   {selectedImage.description}
                 </p>
                 <span className="text-[10px] font-mono text-gray-500 mt-3 uppercase tracking-widest">
-                  Photo {lightboxIndex + 1} of {DISHA_IMAGES.length}
+                  Photo {lightboxIndex + 1} of {DEVKANTO_IMAGES.length}
                 </span>
               </div>
             </motion.div>
